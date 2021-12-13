@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./assets/calculator.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>IMC calculator</title>
+</head>
+    <body>
+
+        <img class="bg-image" src="./assets/background.webp">
+        
+        <div class="container" style="height: 350px;">
+            <div class="desc">
+                <p>Calcule a sua Índice <br>de Massa Corporal (IMC)</p>
+            </div><!-- </desc> -->
+            <div class="inputs">
+                <p>Informe a altura</p>
+                <input id="height" type="number" placeholder="EX: 1,72">
+
+                <p>Informe o peso</p>
+                <input id="weight" type="number" placeholder="EX: 70,5" >
+            </div><!-- </inputs> -->
+            <button id="btnCalculate" class="btn" onclick="calculate()">Calcular</button>
+
+            <div id="result"></div>
+
+            <button id="btnClean" class="btn toggle" onclick="clean()">Limpar</button>
+        </div><!-- </container> -->
+
+        <script src="./scripts/script.js"></script>
+    </body>
+</html>
